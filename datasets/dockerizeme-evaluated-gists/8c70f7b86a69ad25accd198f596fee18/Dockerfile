@@ -1,0 +1,17 @@
+FROM python:2.7.13
+COPY ../datasets/dockerizeme-evaluated-gists/8c70f7b86a69ad25accd198f596fee18/snippet.py /snippet.py
+RUN ["apt-get","update"]
+RUN ["pip","install","requests"]
+RUN ["pip","install","bs4"]
+RUN ["apt-get","install","-y","git"]
+RUN ["apt-get","install","-y","build-essential"]
+RUN ["apt-get","install","-y","curl"]
+RUN ["apt-get","install","-y","bzip2"]
+RUN ["pip","install","versioneer"]
+RUN ["pip","install","beautifulsoup4"]
+RUN ["pip","install","six"]
+RUN ["pip","install","python-dateutil"]
+RUN ["pip","install","coverage"]
+RUN ["pip","install","Faker"]
+RUN ["pip","install","fake-factory"]
+CMD ["python","/snippet.py"]

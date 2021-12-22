@@ -1,0 +1,15 @@
+FROM python:2.7.13
+COPY ../datasets/dockerizeme-evaluated-gists/7d983878dc4c5fcacae57e4446008a06/snippet.py /snippet.py
+RUN ["apt-get","update"]
+RUN ["apt-get","install","-y","python-pip"]
+RUN ["pip","install","enum"]
+RUN ["pip","install","requests"]
+RUN ["pip","install","enum34"]
+RUN ["apt-get","install","-y","python-dev"]
+RUN ["apt-get","install","-y","git"]
+RUN ["pip","install","six"]
+RUN ["apt-get","install","-y","build-essential"]
+RUN ["apt-get","install","-y","python"]
+RUN ["pip","install","pip"]
+RUN ["pip","install","ijson"]
+CMD ["python","/snippet.py"]
