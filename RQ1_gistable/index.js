@@ -17,8 +17,8 @@ const yargs    = require('yargs');
 
 
 
-// const SOURCE_PATH = path.resolve(__dirname, '../datasets/gistable-evaluated-gists');   // RQ1
-const SOURCE_PATH = path.resolve(__dirname, '../datasets/dockerizeme-evaluated-gists');   // RQ2
+const SOURCE_PATH = path.resolve(__dirname, '../datasets/gistable-evaluated-gists');   // RQ1
+// const SOURCE_PATH = path.resolve(__dirname, '../datasets/dockerizeme-evaluated-gists');   // RQ2
 
 console.log(SOURCE_PATH)
 
