@@ -21,6 +21,8 @@ uncommented `const SOURCE_PATH = path.resolve(__dirname, '../datasets/gistable-e
 
 run `RQ1_gistable/code/RQ1_Gistable.ipynb`
 
+<br/>
+
 >**For evaluting DockerizeMe on datasets please run following:** 
 
 `cd RQ1_gistable/index.js`
@@ -28,6 +30,8 @@ run `RQ1_gistable/code/RQ1_Gistable.ipynb`
 uncommented `const SOURCE_PATH = path.resolve(__dirname, '../datasets/dockerizeme-evaluated-gists')`
 
 run `RQ2_dockerizeme/code/RQ2_Dockerizeme.ipynb`
+
+<br/>
 
 >**For recording the categories of exit status of fixed gists from Gistable and DockerizeMe**
 
